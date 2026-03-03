@@ -17,7 +17,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
       <nav style={{ 
         backgroundColor: '#00488C', 
         padding: '8px 24px',

@@ -18,19 +18,26 @@ export default function HeroButton({ href, children }: HeroButtonProps) {
       onMouseLeave={() => setIsHovered(false)}
       style={{ 
         display: 'inline-block',
-        backgroundColor: isHovered ? '#3AAED8' : '#41BEF0',
-        padding: '12px 28px',
-        borderRadius: '6px',
+        backgroundColor: isHovered ? '#2A9AC4' : '#41BEF0',
+        padding: '10px 32px',
+        borderRadius: '10px',
         color: '#ffffff',
-        fontWeight: 500,
+        fontWeight: 400,
         fontSize: '14px',
         textDecoration: 'none',
-        letterSpacing: '0.03em',
+        letterSpacing: '0.08em',
         transition: 'background-color 0.2s',
         cursor: 'pointer'
       }}
     >
-      {children}
+      <span style={{ 
+        display: 'inline-block',
+        transform: 'scaleY(1.2)',
+        transformOrigin: 'center'
+      }}>
+        {children}
+      </span>
     </Link>
   );
 }
+

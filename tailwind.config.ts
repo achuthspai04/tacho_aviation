@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['var(--font-roboto)'],
+        poppins: ['var(--font-poppins)'],
       },
     },
   },

@@ -3,10 +3,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
 
   const navLinks = [
@@ -56,8 +57,8 @@ export default function Navbar() {
           </div>
 
           {/* Contact Us Button */}
-          <Link 
-            href="/contact"
+          <button
+            onClick={() => router.push('/contact')}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             style={{ 
@@ -67,12 +68,13 @@ export default function Navbar() {
               color: '#ffffff',
               fontWeight: 500,
               fontSize: '14px',
-              textDecoration: 'none',
+              border: 'none',
+              cursor: 'pointer',
               transition: 'background-color 0.2s'
             }}
           >
             Contact Us
-          </Link>
+          </button>
         </div>
       </nav>
     </div>

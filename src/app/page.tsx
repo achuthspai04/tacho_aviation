@@ -148,40 +148,50 @@ export default function Home() {
           }}
         >
           {/* Left: Text */}
-          <div className="flex-1">
+          <div className="flex-[1.25]">
             <h2 style={{
               color: '#00488C',
-              fontSize: '2.5rem',
-              fontWeight: 700,
-              marginBottom: '28px',
-              lineHeight: 1.15,
+              fontSize: '2.9rem',
+              fontWeight: 600,
+              marginBottom: '48px',
+              lineHeight: 1.10,
+              transform: 'scaleY(1.0)',
+              transformOrigin: 'top left',
+              display: 'block',
+              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}>
               Providing Aviation<br />related services<br />worldwide
             </h2>
             <p style={{
-              color: '#555555',
-              fontSize: '0.875rem',
-              lineHeight: 1.85,
-              marginBottom: '20px',
+              color: '#545352',
+              fontSize: '14.44px',
+              lineHeight: '17px',
+              transform: 'scaleY(1.1)',
+              marginBottom: '16px',
+              fontWeight: 100,
+              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}>
               Bridging the gap between technical status and commercial value for the modern aircraft lessor. Tacho positions itself as a technical extension of the lessor, focusing on Precision Over Assumptions to mitigate risks during lease transitions and maintenance events.
             </p>
             <p style={{
-              color: '#555555',
-              fontSize: '0.875rem',
-              lineHeight: 1.85,
+              color: '#545352',
+              fontSize: '14.44px',
+              lineHeight: '17px',
+              transform: 'scaleY(1.1)',
+              fontWeight: 100,
+              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}>
               Bridging the gap between technical status and commercial value for the modern aircraft lessor. Tacho positions itself as a technical extension of the lessor.
             </p>
           </div>
 
           {/* Right: Image */}
-          <div className="flex-1 w-full">
+          <div className="flex-[1.4] w-full">
             <Image
               src="/aboutimg.webp"
               alt="Tacho Aviation Services"
-              width={600}
-              height={420}
+              width={1000}
+              height={700}
               className="w-full h-auto"
               style={{
                 borderRadius: '16px',

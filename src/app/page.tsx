@@ -149,9 +149,10 @@ export default function Home() {
         >
           {/* Left: Text */}
           <div className="flex-[1.25]">
-            <h2 style={{
+            <h2
+              className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
+              style={{
               color: '#00488C',
-              fontSize: '2.9rem',
               fontWeight: 600,
               marginBottom: '48px',
               lineHeight: 1.10,
@@ -164,7 +165,7 @@ export default function Home() {
             </h2>
             <p style={{
               color: '#545352',
-              fontSize: '14.44px',
+              fontSize: '13.44px',
               lineHeight: '17px',
               transform: 'scaleY(1.1)',
               marginBottom: '16px',
@@ -175,7 +176,7 @@ export default function Home() {
             </p>
             <p style={{
               color: '#545352',
-              fontSize: '14.44px',
+              fontSize: '13.44px',
               lineHeight: '17px',
               transform: 'scaleY(1.1)',
               fontWeight: 100,

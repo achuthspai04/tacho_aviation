@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div style={{ maxWidth: '950px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '950px', margin: '0 auto', paddingLeft: '16px', paddingRight: '16px' }}>
       <nav style={{ 
         backgroundColor: '#00488C', 
         padding: '8px 24px',
@@ -35,7 +35,7 @@ export default function Navbar() {
               alt="Tacho Logo" 
               width={120} 
               height={36}
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'contain', width: 'auto', height: 'auto' }}
               priority
             />
           </Link>

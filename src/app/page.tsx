@@ -142,7 +142,7 @@ export default function Home() {
           style={{
             position: 'relative',
             zIndex: 1,
-            maxWidth: '1100px',
+            maxWidth: '1300px',
             width: '100%',
             padding: '80px 48px',
             margin: '0 auto',
@@ -261,9 +261,9 @@ export default function Home() {
           style={{
             position: 'relative',
             zIndex: 1,
-            maxWidth: '1400px',
+            maxWidth: '1300px',
             width: '100%',
-            padding: '80px 64px',
+            padding: '80px 48px',
             margin: '0 auto',
           }}
         >
@@ -285,9 +285,9 @@ export default function Home() {
           </h2>
 
           {/* Images row */}
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 md:gap-14">
+          <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 md:gap-9">
             {/* Card 1 */}
-            <div className="flex-1 rounded-[18px] sm:rounded-[35px]" style={{ position: 'relative', overflow: 'hidden' }}>
+            <div className="flex-1 rounded-[18px] sm:rounded-[28px]" style={{ position: 'relative', overflow: 'hidden' }}>
               <Image
                 src="/s1.webp"
                 alt="Leasing Support"
@@ -301,21 +301,21 @@ export default function Home() {
                 background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)',
                 borderRadius: '16px',
               }} />
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px 22px 28px' }}>
-                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.32rem', lineHeight: 1.2, marginBottom: '4px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '14px 16px 18px 22px' }}>
+                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.1rem', lineHeight: 1.2, marginBottom: '3px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
                   Leasing Support
                 </p>
-                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.75rem', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '56px' }}>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.7rem', lineHeight: 1.5, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '48px' }}>
                   Operating lease placement and transition
                 </p>
               </div>
-              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '18px', right: '16px', width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="flex-1 rounded-[18px] sm:rounded-[35px]" style={{ position: 'relative', overflow: 'hidden' }}>
+            <div className="flex-1 rounded-[18px] sm:rounded-[28px]" style={{ position: 'relative', overflow: 'hidden' }}>
               <Image
                 src="/s2.webp"
                 alt="Service 2"
@@ -329,21 +329,21 @@ export default function Home() {
                 background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)',
                 borderRadius: '16px',
               }} />
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px 22px 28px' }}>
-                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.32rem', lineHeight: 1.2, marginBottom: '4px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '14px 16px 18px 22px' }}>
+                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.1rem', lineHeight: 1.2, marginBottom: '3px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
                   Asset Management
                 </p>
-                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.75rem', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '56px' }}>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.7rem', lineHeight: 1.5, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '48px' }}>
                   End-to-end lifecycle management tracking
                 </p>
               </div>
-              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '18px', right: '16px', width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="flex-1 rounded-[18px] sm:rounded-[35px]" style={{ position: 'relative', overflow: 'hidden' }}>
+            <div className="flex-1 rounded-[18px] sm:rounded-[28px]" style={{ position: 'relative', overflow: 'hidden' }}>
               <Image
                 src="/s3.webp"
                 alt="Service 3"
@@ -357,16 +357,16 @@ export default function Home() {
                 background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)',
                 borderRadius: '16px',
               }} />
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px 22px 28px' }}>
-                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.32rem', lineHeight: 1.2, marginBottom: '4px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '14px 16px 18px 22px' }}>
+                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.1rem', lineHeight: 1.2, marginBottom: '3px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
                   Technical Oversight
                 </p>
-                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.75rem', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '56px' }}>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.7rem', lineHeight: 1.5, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '48px' }}>
                   Pre-purchase inspections (PPI) and audits.
                 </p>
               </div>
-              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '18px', right: '16px', width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
             </div>
           </div>
@@ -375,6 +375,89 @@ export default function Home() {
 
       {/* Strategy Section */}
       <StrategySection />
+
+      {/* Why Us Section */}
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          minHeight: '100vh',
+          fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'flex-start',
+        }}
+      >
+        {/* Background Image */}
+        <Image
+          src="/whybg.webp"
+          alt=""
+          fill
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center',
+            zIndex: 0,
+          }}
+          priority
+        />
+
+        {/* Decorative vector — bottom-right */}
+        <Image
+          src="/plane1.webp"
+          alt=""
+          width={300}
+          height={300}
+          className="w-[65%] sm:w-[55%] md:w-[16%]"
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            right: 0,
+            height: 'auto',
+            maxWidth: '100%',
+            zIndex: 1,
+            pointerEvents: 'none',
+          }}
+        />
+
+        {/* Content */}
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 2,
+            maxWidth: '1300px',
+            width: '100%',
+            padding: '80px 48px',
+            margin: '0 auto',
+          }}
+        >
+          <h2
+            className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
+            style={{
+              color: '#ffffff',
+              fontWeight: 600,
+              marginBottom: '48px',
+              lineHeight: 1.10,
+              transform: 'scaleY(1.0)',
+              transformOrigin: 'top left',
+              display: 'block',
+              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+              textShadow: '0 2px 12px rgba(0,0,0,0.25)',
+            }}
+          >
+            Why Tacho<br />Aviation?
+          </h2>
+          <p style={{
+            color: 'rgba(255,255,255,0.85)',
+            fontSize: '13.44px',
+            lineHeight: '17px',
+            transform: 'scaleY(1.1)',
+            fontWeight: 100,
+            maxWidth: '440px',
+            fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+          }}>
+            Independent, conflict-free, and commercially aware technical advisory for complex aviation assets.          </p>
+        </div>
+      </div>
     </main>
   );
 }

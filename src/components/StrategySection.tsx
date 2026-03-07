@@ -246,7 +246,7 @@ export default function StrategySection() {
           style={{
             maxWidth: '1300px',
             width: '100%',
-            padding: '0 64px',
+            padding: '0 48px',
             margin: '0 auto',
           }}
         >

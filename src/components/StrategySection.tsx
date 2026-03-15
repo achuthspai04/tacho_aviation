@@ -106,7 +106,6 @@ export default function StrategySection() {
             zIndex: 0,
             pointerEvents: 'none',
           }}
-          priority
         />
 
         <div style={{ position: 'relative', zIndex: 1 }}>
@@ -225,7 +224,6 @@ export default function StrategySection() {
           zIndex: 0,
           pointerEvents: 'none',
         }}
-        priority
       />
 
       {/* Sticky viewport */}

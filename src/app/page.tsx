@@ -2,21 +2,20 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroButton from '@/components/HeroButton';
 import Image from 'next/image';
-import StrategySection from '@/components/StrategySection';
+import PreloadScreen from '../components/PreloadScreen';
+import StrategySectionWrapper from '@/components/StrategySectionWrapper';
+import HelpWrapper from '@/components/HelpWrapper';
+import FooterWrapper from '@/components/FooterWrapper';
 
 export default function Home() {
   return (
     <main>
+      <PreloadScreen />
+
       {/* Fixed Floating Navbar */}
       <div
-        className="px-4 sm:px-6 md:px-12 lg:px-12"
-        style={{ 
-          position: 'fixed',
-          top: '50px',
-          left: 0,
-          right: 0,
-          zIndex: 50,
-        }}
+        className="px-4 sm:px-6 md:px-12 lg:px-12 fixed left-0 right-0 z-[50]"
+        style={{ top: '50px' }}
       >
         <Navbar />
       </div>
@@ -133,7 +132,6 @@ export default function Home() {
             objectPosition: 'center',
             zIndex: 0,
           }}
-          priority
         />
 
         {/* Two-column content — above bg image */}
@@ -200,7 +198,6 @@ export default function Home() {
                 objectFit: 'cover',
                 display: 'block',
               }}
-              priority
             />
           </div>
         </div>
@@ -374,7 +371,7 @@ export default function Home() {
       </div>
 
       {/* Strategy Section */}
-      <StrategySection />
+      <StrategySectionWrapper />
 
       {/* Why Us Section */}
       <div
@@ -398,7 +395,6 @@ export default function Home() {
             objectPosition: 'center',
             zIndex: 0,
           }}
-          priority
         />
 
         {/* Decorative vector — bottom-right */}
@@ -426,38 +422,215 @@ export default function Home() {
             zIndex: 2,
             maxWidth: '1300px',
             width: '100%',
-            padding: '80px 48px',
+            padding: '122px 48px 72px',
             margin: '0 auto',
           }}
         >
-          <h2
-            className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
+          <div style={{ paddingTop: '6px', marginBottom: '56px' }}>
+            <h2
+              className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
+              style={{
+                color: '#ffffff',
+                fontWeight: 600,
+                marginBottom: '20px',
+                lineHeight: 1.05,
+                transform: 'scaleY(1.0)',
+                transformOrigin: 'top left',
+                display: 'block',
+                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                textShadow: '0 2px 12px rgba(0,0,0,0.25)',
+              }}
+            >
+              Why Tacho<br />Aviation?
+            </h2>
+            <p
+              style={{
+                color: 'rgba(255,255,255,0.78)',
+                fontSize: '0.98rem',
+                lineHeight: '1.55',
+                transform: 'scaleY(1.03)',
+                fontWeight: 300,
+                maxWidth: '470px',
+                letterSpacing: '0.01em',
+                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+              }}
+            >
+              Independent, conflict-free, and commercially aware technical advisory for complex aviation assets.
+            </p>
+          </div>
+
+          <div
+            className="grid grid-cols-1 md:grid-cols-3"
             style={{
-              color: '#ffffff',
-              fontWeight: 600,
-              marginBottom: '48px',
-              lineHeight: 1.10,
-              transform: 'scaleY(1.0)',
-              transformOrigin: 'top left',
-              display: 'block',
-              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-              textShadow: '0 2px 12px rgba(0,0,0,0.25)',
+              columnGap: '70px',
+              rowGap: '52px',
             }}
           >
-            Why Tacho<br />Aviation?
-          </h2>
-          <p style={{
-            color: 'rgba(255,255,255,0.85)',
-            fontSize: '13.44px',
-            lineHeight: '17px',
-            transform: 'scaleY(1.1)',
-            fontWeight: 100,
-            maxWidth: '440px',
-            fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-          }}>
-            Independent, conflict-free, and commercially aware technical advisory for complex aviation assets.          </p>
+            <div className="hidden md:block" aria-hidden="true" />
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
+                <span
+                  style={{
+                    width: '8px',
+                    height: 'auto',
+                    alignSelf: 'stretch',
+                    borderRadius: '999px',
+                    backgroundColor: '#274AAB',
+                    flexShrink: 0,
+                  }}
+                />
+                <h3
+                  style={{
+                    color: '#ffffff',
+                    fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  We lead<br />Inspections
+                </h3>
+              </div>
+              <p
+                style={{
+                  color: 'rgba(255,255,255,0.78)',
+                  fontSize: '0.84rem',
+                  lineHeight: 1.6,
+                  fontWeight: 300,
+                  maxWidth: '430px',
+                  fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                }}
+              >
+                Most leasing firms outsource their inspections; we lead with them. By maintaining in-house expertise in aircraft and engine inspections. We identify potential technical liabilities long before they impact your bottom line.
+              </p>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
+                <span
+                  style={{
+                    width: '8px',
+                    height: 'auto',
+                    alignSelf: 'stretch',
+                    borderRadius: '999px',
+                    backgroundColor: '#274AAB',
+                    flexShrink: 0,
+                  }}
+                />
+                <h3
+                  style={{
+                    color: '#ffffff',
+                    fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  Commitment<br />to Compliance
+                </h3>
+              </div>
+              <p
+                style={{
+                  color: 'rgba(255,255,255,0.78)',
+                  fontSize: '0.84rem',
+                  lineHeight: 1.6,
+                  fontWeight: 300,
+                  maxWidth: '430px',
+                  fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                }}
+              >
+                Our processes are built around the highest global standards (EASA/FAA). We give investors and operators peace of mind: every record is traceable, every part is compliant, and every aircraft is 'Ready to Fly.'
+              </p>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
+                <span
+                  style={{
+                    width: '8px',
+                    height: 'auto',
+                    alignSelf: 'stretch',
+                    borderRadius: '999px',
+                    backgroundColor: '#274AAB',
+                    flexShrink: 0,
+                  }}
+                />
+                <h3
+                  style={{
+                    color: '#ffffff',
+                    fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  Global Hub,<br />Global Reach
+                </h3>
+              </div>
+              <p
+                style={{
+                  color: 'rgba(255,255,255,0.78)',
+                  fontSize: '0.84rem',
+                  lineHeight: 1.6,
+                  fontWeight: 300,
+                  maxWidth: '430px',
+                  fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                }}
+              >
+                Operating from India, at the crossroads of international aviation, we are uniquely positioned to deploy technical teams and manage transitions across Europe, Asia, and Africa. Our location enables rapid, agile responses to market needs.
+              </p>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
+                <span
+                  style={{
+                    width: '8px',
+                    height: 'auto',
+                    alignSelf: 'stretch',
+                    borderRadius: '999px',
+                    backgroundColor: '#274AAB',
+                    flexShrink: 0,
+                  }}
+                />
+                <h3
+                  style={{
+                    color: '#ffffff',
+                    fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  Clear<br />Definitions
+                </h3>
+              </div>
+              <p
+                style={{
+                  color: 'rgba(255,255,255,0.78)',
+                  fontSize: '0.84rem',
+                  lineHeight: 1.6,
+                  fontWeight: 300,
+                  maxWidth: '430px',
+                  fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                }}
+              >
+                Clearly defined scope and deliverables, disciplined execution with strict timeline control, and strict adherence to confidentiality.
+              </p>
+            </div>
+
+            <div className="hidden md:block" aria-hidden="true" />
+          </div>
         </div>
       </div>
+
+      <HelpWrapper />
+      <FooterWrapper />
     </main>
   );
 }

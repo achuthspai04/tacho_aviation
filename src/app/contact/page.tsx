@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import HelpWrapper from '@/components/HelpWrapper';
 
-export default function ServicesPage() {
+export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#F2F6F9]">
 
@@ -13,8 +14,8 @@ export default function ServicesPage() {
         }}
       >
         <Image
-          src="/servicehero.webp"
-          alt="Services"
+          src="/contacthero.webp"
+          alt="Contact Us"
           width={1920}
           height={800}
           priority
@@ -30,7 +31,7 @@ export default function ServicesPage() {
         <div style={{ 
           position: 'absolute', 
           inset: 0, 
-          backgroundColor: 'rgba(0, 32, 90, 0.3)',
+          backgroundColor: 'rgba(0, 32, 90, 0.4)',
           pointerEvents: 'none',
           zIndex: 1
         }} />
@@ -56,7 +57,7 @@ export default function ServicesPage() {
             fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             textShadow: '0 2px 12px rgba(0,0,0,0.25)',
           }}>
-            Our Complete<br />array of services
+            Get in Touch<br />with Our Experts
           </h1>
           <p className="text-center" style={{
             color: '#ebf4f8',
@@ -67,15 +68,17 @@ export default function ServicesPage() {
             fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             textShadow: '0 2px 10px rgba(0,0,0,0.2)',
           }}>
-            Explore our comprehensive range of aviation management services.
+            Reach out to discuss your aviation asset management needs.
           </p>
         </div>
       </div>
 
       {/* Main Content Area */}
       <div className="container mx-auto px-4 py-20">
-        {/* Blank for now as requested */}
+        {/* Blank for now */}
       </div>
+
+      <HelpWrapper />
     </main>
   );
 }

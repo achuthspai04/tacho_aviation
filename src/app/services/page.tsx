@@ -19,10 +19,8 @@ export default function ServicesPage() {
           height={800}
           priority
           sizes="100vw"
+          className="w-full h-auto min-h-[300px] sm:min-h-[400px] md:min-h-0 object-cover"
           style={{
-            width: '100%',
-            height: 'auto',
-            objectFit: 'cover',
             display: 'block'
           }}
         />
